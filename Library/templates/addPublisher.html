@@ -1,0 +1,35 @@
+{% extends "base-admin.html" %}
+
+{% block title %}Agregar Ediorial{% endblock %}
+
+{% block content %}
+
+	<!-- ...................Contenedor Contenido General......................... -->
+
+	
+	<section class="container content">
+    	<div class="row">
+        	
+        	<section class="panel panel-default">
+  				<section class="panel-body">
+		        	<div class="col-md-12 row">
+		        		<div class="page-header">
+								<h3 class="text-center">AGREGAR Editorial</h3>
+						</div>
+						<section class="text-center">
+							<form action="." method="POST">
+								{% csrf_token %}
+								{{ form.as_p }}
+								<input type="submit" value="Guardar">
+								<input type="reset" value="Reset">
+							</form>
+			        	{{ information }}		      	
+				      	</section>
+					</div>
+				</section>
+			</section>
+		</div>	
+	</section>
+  		
+
+{% endblock %}

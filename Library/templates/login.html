@@ -1,0 +1,21 @@
+{%extends "base.html"%}
+
+{% block title %}Login{% endblock %}
+
+{%block content%}
+
+<section class="container">
+	<section class="col-md-12 text-center ">
+		<form action="." method="POST">
+		{% csrf_token%}
+
+		{{messaje}}
+
+		{{form.as_p}}
+		<input type="submit" value="Login">
+		</form>
+	</section>
+
+
+</section>
+{%endblock%}
