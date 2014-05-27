@@ -76,7 +76,7 @@
 						<p><img src='{{ MEDIA_URL }}{{b.frontbook}}'></p>
 										
 						<div class="caption list-group-item">
-							<h4><p><a href="#">{{b.title}}</a></p></h4>
+							<h4><p><a href="{% url 'view_books'%}">{{b.title}}</a></p></h4>
 							<h4><p>${{b.price}}</p></h4>
                             <button type="button" class="btn btn-primary">Comprar</button>
                        	</div>
